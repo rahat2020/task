@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/faciocn.ico" type="image/x-icon">
+
+    <title>e-commerce || homepage</title>
+</head>
+
+<body>
+
+    <!------------ NAVBAR ------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg__light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="logo" class="navbar__logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex mb-1 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link color__bl" aria-current="page" href="#">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color__bl" href="#">Women</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link color__bl" href="#">Women</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link color__bl" href="#">Kids</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link color__bl" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color__bl" href="#">Contact us</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav nav__right d-flex justify-content-between align-items-center">
+                    <li class="nav-item search__launch">
+                        <input class="form-control forminput__bg" type="search" placeholder="Search here"
+                            aria-label="Search">
+                        <img src="./assets/search.png" alt="search-icon" class="search__icon">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <img src="./assets/love.png" alt="" class="right__icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color__bl" href="#">
+                            <img src="./assets/cart.png" alt="" class="right__icon">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">
+                            <img src="./assets/user.png" alt="" class="navuser__icon">
+                            <span class="ms-2">Anne Doe</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------- HEADING OFFER -------------->
+    <div class="heading__offer d-flex justify-content-center align-items-center">
+        <span class="heading__offerTitle">Invite Friends and get 50% off on your next purchase</span>
+        <span class="heading__offerSubTitle">Invite Now</span>
+    </div>
+
+    <!----------- HEADERMAIN SLIDE OR CAROUSEL ----------->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide caru__slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+        </div> -->
+        <div class="carousel-inner">
+            <div class="carousel-item active d-flex justify-content-center align-items-center h-100"
+                data-bs-interval="10000">
+                <img src="./assets/headermain.png" class="caro__img" alt="...">
+                <div class="caro__rght">
+                    <img src="./assets/prada.png" alt="img" class="headermainRight__headimg">
+                    <h3 class="mt-4 headermainRight__headTitle">Big Fashion Festival</h3>
+                    <h3 class="mt-2 headermainRight__headTitle">50% - 80% off</h3>
+                    <button class="explore mt-2">Explore</button>
+                </div>
+            </div>
+        </div>
+        <div class="caru__btn">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                class="active drag__btn dragBtn__one" aria-current="true" aria-label="Slide 1">
+            </button>
+            <button class="drag__btn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2">
+            </button>
+            <button class="drag__btn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3">
+            </button>
+            <button class="drag__btn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3">
+            </button>
+            <button class="drag__btn" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3">
+            </button>
+        </div>
+    </div>
+
+    <!--------------- TRENDING NOW PRODUCTS ---------------->
+    <div class="trend__pd p-5">
+        <h3 class="trend__title">Trending Now</h3>
+
+        <div class="card__container mt-4 mb-5 swiper mySwiper">
+            <div class=" swiper-wrapper">
+
+                <div class="card border-0 swiper-slide" style="width: 10rem;height: 16rem">
+                    <img src="./assets/cardOne.png" class="card__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <h5 class="card-title">Womens Denim Jacket</h5>
+                        <div class="pd__details d-flex justify-content-start align-items-start">
+                            <p class="card-text">Brand Name</p>
+                            <p class="card-text ms-2 rating__number">4.4</p>
+                            <img src="./assets/star.png" alt="rating" class="pd__rating">
+                        </div>
+                        <div class="cardPd__btm d-flex justify-content-start align-items-start">
+                            <h5 class="rating__price">Rs. 700</h5>
+                            <p class="rating__abvPrice">Rs. 1000</p>
+                            <p class="rating__discount">(30% off)</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD TWO -->
+                <div class="card border-0 swiper-slide" style="width: 10rem;height: 16rem">
+                    <img src="./assets/cardTwo.png" class="card__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <h5 class="card-title">Womens Denim Jacket</h5>
+                        <div class="pd__details d-flex justify-content-start align-items-start">
+                            <p class="card-text">Brand Name</p>
+                            <p class="card-text ms-2 rating__number">4.4</p>
+                            <img src="./assets/star.png" alt="rating" class="pd__rating">
+                        </div>
+                        <div class="cardPd__btm d-flex justify-content-start align-items-start">
+                            <h5 class="rating__price">Rs. 700</h5>
+                            <p class="rating__abvPrice">Rs. 1000</p>
+                            <p class="rating__discount">(30% off)</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD THREE -->
+                <div class="card border-0 swiper-slide" style="width: 10rem;height: 16rem">
+                    <img src="./assets/cardThree.png" class="card__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <h5 class="card-title">Womens Denim Jacket</h5>
+                        <div class="pd__details d-flex justify-content-start align-items-start">
+                            <p class="card-text">Brand Name</p>
+                            <p class="card-text ms-2 rating__number">4.4</p>
+                            <img src="./assets/star.png" alt="rating" class="pd__rating">
+                        </div>
+                        <div class="cardPd__btm d-flex justify-content-start align-items-start">
+                            <h5 class="rating__price">Rs. 700</h5>
+                            <p class="rating__abvPrice">Rs. 1000</p>
+                            <p class="rating__discount">(30% off)</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD FOUR -->
+                <div class="card border-0 swiper-slide" style="width: 10rem;height: 16rem">
+                    <img src="./assets/cardFour.png" class="card__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <h5 class="card-title">Womens Denim Jacket</h5>
+                        <div class="pd__details d-flex justify-content-start align-items-start">
+                            <p class="card-text">Brand Name</p>
+                            <p class="card-text ms-2 rating__number">4.4</p>
+                            <img src="./assets/star.png" alt="rating" class="pd__rating">
+                        </div>
+                        <div class="cardPd__btm d-flex justify-content-start align-items-start">
+                            <h5 class="rating__price">Rs. 700</h5>
+                            <p class="rating__abvPrice">Rs. 1000</p>
+                            <p class="rating__discount">(30% off)</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD FOUR -->
+                <div class="card border-0 swiper-slide" style="width: 10rem;height: 16rem">
+                    <img src="./assets/cardFour.png" class="card__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <h5 class="card-title">Womens Denim Jacket</h5>
+                        <div class="pd__details d-flex justify-content-start align-items-start">
+                            <p class="card-text">Brand Name</p>
+                            <p class="card-text ms-2 rating__number">4.4</p>
+                            <img src="./assets/star.png" alt="rating" class="pd__rating">
+                        </div>
+                        <div class="cardPd__btm d-flex justify-content-start align-items-start">
+                            <h5 class="rating__price">Rs. 700</h5>
+                            <p class="rating__abvPrice">Rs. 1000</p>
+                            <p class="rating__discount">(30% off)</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- Deals of the Day ------------->
+    <div class="deal__pd p-5">
+        <h3 class="trend__title">Deal Deals of the Day</h3>
+
+        <div class="card__container mt-4 mb-5 Dealswiper dealSwiper">
+            <div class=" swiper-wrapper">
+
+                <div class="card border-0 swiper-slide" style="width: 18rem;height: 25rem;">
+                    <img src="./assets/cardOne.png" class="DealCard__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <div class="pd__details d-flex justify-content-center align-items-center flex-column">
+                            <img src="./assets/levis.png" alt="rating" class="dealLevis__img">
+                            <h3 class="mt-4 deal__price fw-bold">Best of Styles</h3>
+                            <p class="fw-bold deal__price">Under Rs.799</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEAL CARD TWO -->
+                <div class="card border-0 swiper-slide" style="width: 18rem;height: 25rem;">
+                    <img src="./assets/dealTwo.png" class="DealCard__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <div class="pd__details d-flex justify-content-center align-items-center flex-column">
+                            <img src="./assets/levis.png" alt="rating" class="dealLevis__img">
+                            <h3 class="mt-4 deal__price fw-bold">Best of Styles</h3>
+                            <p class="fw-bold deal__price">Under Rs.799</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- DEAL CARD THREE -->
+                <div class="card border-0 swiper-slide" style="width: 18rem;height: 25rem;">
+                    <img src="./assets/dealThree.png" class="DealCard__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <div class="pd__details d-flex justify-content-center align-items-center flex-column">
+                            <img src="./assets/levis.png" alt="rating" class="dealLevis__img">
+                            <h3 class="mt-4 deal__price fw-bold">Best of Styles</h3>
+                            <p class="fw-bold deal__price">Under Rs.799</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- DEAL CARD FOUR -->
+                <div class="card border-0 swiper-slide" style="width: 18rem;height: 25rem;">
+                    <img src="./assets/dealFour.png" class="DealCard__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <div class="pd__details d-flex justify-content-center align-items-center flex-column">
+                            <img src="./assets/levis.png" alt="rating" class="dealLevis__img">
+                            <h3 class="mt-4 deal__price fw-bold">Best of Styles</h3>
+                            <p class="fw-bold deal__price">Under Rs.799</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- DEAL CARD FIVE -->
+                <div class="card border-0 swiper-slide" style="width: 18rem;height: 25rem;">
+                    <img src="./assets/cardOne.png" class="DealCard__img" alt="...">
+                    <div class="p-3 shadow__deal h-50 w-100">
+                        <div class="pd__details d-flex justify-content-center align-items-center flex-column">
+                            <img src="./assets/levis.png" alt="rating" class="dealLevis__img">
+                            <h3 class="mt-4 deal__price fw-bold">Best of Styles</h3>
+                            <p class="fw-bold deal__price">Under Rs.799</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- TREANDING OFFER ------------------>
+    <div class="td__offer">
+        <h3 class="tdoffer__title">Trending Offer</h3>
+        <div class="tdoffer__container mt-4 treangingOffer tdOffer">
+            <div class="swiper-wrapper">
+
+                <div class="card mb-3 swiper-slide border-0"
+                    style=" height:16rem; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-body flex-column d-flex justify-content-center align-items-center">
+                                <img src="./assets/levis.png" alt="img" class="tdOffer__img" />
+                                <h3 class="tdOffer__min">Min 60% off</h3>
+                                <button class="explore mt-2">Explore</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./assets/offerOne.png" class="tdOffer__rightImg" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 swiper-slide border-0"
+                    style=" height:16rem; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-body flex-column d-flex justify-content-center align-items-center">
+                                <img src="./assets/levis.png" alt="img" class="tdOffer__img" />
+                                <h3 class="tdOffer__min">Min 60% off</h3>
+                                <button class="explore mt-2">Explore</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./assets/offerOne.png" class="tdOffer__rightImg" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 swiper-slide border-0"
+                    style=" height:16rem; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="card-body flex-column d-flex justify-content-center align-items-center">
+                                <img src="./assets/levis.png" alt="img" class="tdOffer__img" />
+                                <h3 class="tdOffer__min">Min 60% off</h3>
+                                <button class="explore mt-2">Explore</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./assets/offerOne.png" class="tdOffer__rightImg" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------ FEATURES FOR FESTIBEL ------------>
+    <div class="fr__festibel">
+        <div class="d-flex justify-content-center align-items-center flex-column fr__container">
+            <img src="./assets/21.png" alt="" class="fr__img">
+            <h1 class="fr__title">Big Fashion Festival</h1>
+            <h2 class="fr__title">70% - 80% off</h2>
+            <button class="fr__explore mt-4">Explore</button>
+        </div>
+    </div>
+
+    <!------------------ SHOP BY CATEGORIES ------------>
+    <div class="shby__category">
+        <h3 class="shby__title">Shop by Categories</h3>
+        <div class="shby__container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="shby__left">
+                        <img src="./assets/cataOne.png" alt="" class="shby__leftImg">
+                        <div class="overlay">
+                            <h3 class="shby__leftTitle">Womens Pants</h3>
+                            <span class="shby__leftTitleTwo">Explore <img src="./assets/arrow.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="shby__right">
+                        <div class="row">
+                            <div class="col-md-6" style="margin-bottom:20px;">
+                                <div class="shby__rgtContainer">
+                                    <img src="./assets/cataTwo.png" alt="img" class="shby__rghtImg">
+                                    <div class="overlay">
+                                        <h3 class="shby__rghtTitle">Mens Jacket</h3>
+                                        <span class="shby__rghtTitleTwo">Explore <img src="./assets/arrow.png"
+                                                alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="shby__rgtContainer">
+                                    <img src="./assets/cataThree.png" alt="img" class="shby__rghtImg">
+                                    <div class="overlay">
+                                        <h3 class="shby__rghtTitle">Sweater</h3>
+                                        <span class="shby__rghtTitleTwo">Explore <img src="./assets/arrow.png"
+                                                alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="shby__rgtContainer">
+                                    <img src="./assets/cataFour.png" alt="img" class="shby__rghtImg">
+                                    <div class="overlay">
+                                        <h3 class="shby__rghtTitle">Womens Tops</h3>
+                                        <span class="shby__rghtTitleTwo">Explore <img src="./assets/arrow.png"
+                                                alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="shby__rgtContainer">
+                                            <img src="./assets/cataFive.png" alt="img" class="shby__rghtImg">
+                                            <div class="overlay">
+                                                <h3 class="shby__rghtTitle">Pants</h3>
+                                                <span class="shby__rghtTitleTwo">Explore <img src="./assets/arrow.png"
+                                                        alt=""></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="shby__rgtContainer">
+                                            <img src="./assets/cataSix.png" alt="img" class="shby__rghtImg">
+                                            <div class="overlay">
+                                                <h4 class="shby__rghtTitle">Womens Jackets</h4>
+                                                <span class="shby__rghtTitleTwo">Explore <img src="./assets/arrow.png"
+                                                        alt=""></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- TESTIMONIALS ---------------->
+    <div class="testimonials">
+        <h3 class="testi__title">What Our Customer Says</h3>
+        <div class="testi__container testimonial testi">
+            <div class="card-wrapper swiper-wrapper">
+
+
+                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
+                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
+                    <div class="cardimg__container">
+                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <span class="mb-2 d-flex justify-content-center align-items-center">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/blankStar.png" alt="star" class="review__star">
+                            <span class="review__num">4.4</span>
+                        </span>
+                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
+                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
+                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
+                    </div>
+                </div>
+                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
+                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
+                    <div class="cardimg__container">
+                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <span class="mb-2 d-flex justify-content-center align-items-center">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/blankStar.png" alt="star" class="review__star">
+                            <span class="review__num">4.4</span>
+                        </span>
+                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
+                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
+                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
+                    </div>
+                </div>
+                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
+                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
+                    <div class="cardimg__container">
+                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <span class="mb-2 d-flex justify-content-center align-items-center">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/blankStar.png" alt="star" class="review__star">
+                            <span class="review__num">4.4</span>
+                        </span>
+                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
+                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
+                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
+                    </div>
+                </div>
+               
+            </div>
+            <button class="nxt__btn swiper-button-next"></button>
+            <button class="prv__btn swiper-button-prev"></button>
+            <!-- <button class="swiper-pagination"></button> -->
+        </div>
+    </div>
+
+    <!---------------------- FOOTER -------------------->
+    <div class="footer">
+        
+    </div>
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<!-- bootstrap jss -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<!-- script js -->
+<script src="./app.js"></script>
+
+</html>

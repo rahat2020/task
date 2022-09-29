@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar styles /////////////////*/
+.bg__light {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+    width: 50px;
+    margin-right: 2rem;
+}
+
+.color__bl {
+    color: #272727 !important;
+}
+
+.nav__right {
+    margin-left: 200px;
+    width: 50%;
+
+}
+
+.search__launch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.search__launch .forminput__bg {
+    background-color: #F0F0F0;
+    border: none !important;
+
+}
+
+.search__launch .search__icon {
+    position: absolute;
+    /* top: ; */
+    right: 14px;
+    width: 20px !important;
+}
+
+.right__icon {
+    width: 20px !important;
+    /* margin-left: 2em !important; */
+}
+
+.navuser__icon {
+    width: 30px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 30px;
+}
+
+
+/*/////////////  HEADING OFFER ///////////////*/
+.heading__offer {
+    background: #F9FAFF;
+}
+
+.heading__offer .heading__offerTitle {
+    padding: .66rem;
+}
+
+.heading__offer .heading__offerSubTitle {
+    color: #00398F;
+}
+
+
+/*//////////// CAROUSEL STYLESS /////////////*/
+.caru__slide {
+    background-color: #f8f8f8;
+}
+
+.caro__img {
+    width: 50%;
+}
+
+.caro__rght {
+    background-image: url(./assets/headermainright.png);
+    height: 84vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Libre Baskerville';
+}
+
+.explore {
+    border: 1.89px solid #25201D;
+    ;
+    background-color: #ffffff0e;
+    color: #272727;
+    padding: 3px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.caro__rght .headermainRight__headimg {
+    width: 300px;
+    height: 60px;
+}
+
+.caro__rght .headermainRight__headTitle {
+    color: #565656;
+}
+
+.caru__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caru__btn .drag__btn {
+    margin: 4px;
+    width: 10px;
+    height: 10px;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    color: #002482 !important;
+    /* background-color: #002482 !important; */
+}
+
+.dragBtn__one {
+    color: #002482 !important;
+    background-color: #002482 !important;
+}
+
+
+/*////////// TRENDING NOW PRODUCTS //////////*/
+.trend__pd,
+.deal__pd {
+    background-color: #f8f8f8;
+}
+
+.trend__title {
+    color: #272727;
+    font-weight: 600;
+    font-family: 'Libre Baskerville';
+    /* background-color: #EEEEEE; */
+}
+
+.card-text {
+    color: #272727 !important;
+    font-family: 'Libre Baskerville';
+}
+
+.card__img {
+    width: 100%;
+}
+
+.rating__number {
+    color: #848484 !important;
+}
+
+.pd__rating {
+    width: 14px;
+    height: 15px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.rating__price {
+    color: #272727;
+    font-weight: 700;
+}
+
+.rating__abvPrice {
+    color: #848484 !important;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.rating__discount {
+    font-family: 'Libre Baskerville';
+    color: #0A8200;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.swiper {
+    width: 100%;
+    height: 60vh;
+}
+
+.swiper-wrapper {
+    width: 75% !important;
+    /* height: 100vh; */
+    /* border: 1px solid red; */
+}
+
+
+/*///////////// DEAL OF THE DAY ///////////*/
+.deal__pd {
+    overflow: hidden;
+    width: 100%;
+}
+
+.shadow__deal {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(165, 165, 165, 0.07);
+}
+
+.DealCard__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Dealswiper,
+.treangingOffer {
+    overflow: hidden;
+    width: 100vw;
+    height: 70vh;
+    /* border: 1px solid red; */
+}
+
+.dealLevis__img {
+    width: 6rem;
+}
+
+.deal__price {
+    color: #272727;
+    font-family: 'Libre Baskerville';
+}
+
+
+/*////////////// TREANDING OFFER  /////////////////*/
+.td__offer {
+    background-color: #f8f8f8;
+    overflow: hidden;
+    width: 100%;
+    /* margin-bottom: 2rem; */
+    /* border: 1px solid aqua; */
+}
+
+.td__offer .tdoffer__title {
+    color: #272727;
+    font-weight: 600;
+    padding: 3rem;
+    font-family: 'Libre Baskerville';
+}
+
+.tdOffer__img {
+    width: 6rem;
+    margin-top: 2rem;
+
+}
+
+/* .treangingOffer {
+    border: 1px solid red;
+} */
+
+.tdOffer__min {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    color: #272727;
+    margin-top: 1rem;
+}
+
+.tdOffer__rightImg {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+}
+
+/* .swiper-slide{
+    border: 1px solid blue !important;
+} */
+
+
+/*///////////// FEATURES FOR FESTIBEL  /////////////////*/
+.fr__festibel {
+    background-image: url(./assets/forever.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-bottom: 3rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .fr__festibel .fr__container{
+    border : 1px solid red;
+} */
+.fr__container .fr__img {
+    width: 440px;
+    height: 90px;
+}
+
+.fr__container .fr__title {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.fr__explore {
+    border: 1.89px solid #FFFFFF;
+    ;
+    background-color: #ffffff0e;
+    color: #FFFFFF;
+    padding: 3px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+/*///////////////// SHOP BY CATEGORY //////////////*/
+.shby__category {
+    padding: 3rem;
+    background: #EEEEEE;
+}
+
+.shby__title {
+    color: #272727;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: 'Libre Baskerville';
+}
+
+
+
+.shby__left {
+    position: relative;
+    overflow: hidden;
+}
+
+.shby__left .shby__leftImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.shby__left .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+}
+
+.overlay .shby__leftTitle {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.overlay .shby__leftTitleTwo {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* shby__right styles//////////// */
+.shby__rgtContainer {
+    position: relative;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.shby__rgtContainer .shby__rghtImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shby__rgtContainer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+}
+
+.overlay .shby__rghtTitle {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.overlay .shby__rghtTitleTwo {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*////////////////// TESTIMONIALS //////////////*/
+.testimonials {
+    background: #EEEEEE;
+    /* margin-bottom: 2rem; */
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.testimonials .testi__title {
+    margin: 0 0 2rem 3rem;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.testi__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    position: relative;
+}
+
+.cardimg__container {
+    width: 7rem;
+    height: 7rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardimg__container .testtcard__img {
+    width: 100%;
+    height: 100%;
+}
+
+.review__star {
+    width: 1rem;
+    height: 1rem;
+}
+
+.review__num {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.review__text {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #272727;
+    text-align: center;
+}
+
+.testimonial {
+    overflow: hidden;
+    width: 100vw;
+    height: 50vh;
+    /* height: 100%; */
+    /* border: 1px solid blue; */
+}
+
+.card-wrapper {
+    border: 1px solid #d81d10;
+    height: 300px !important;
+}
+
+.slider {
+    width: 700px !important;
+    height: 300px !important;
+}
+.prv__btn{
+    position: absolute;
+    margin-left: 2rem;
+    border: none;
+    padding: 1.42rem;
+    width: 10px;
+    height: 5px;
+    background: #272727cc;
+    color: #FFFFFF !important;
+    border-radius: 50%;  
+}
+.nxt__btn {
+    position: absolute;
+    margin-right: 2rem;
+    border: none;
+    padding: 1.42rem;
+    background: #272727cc;
+    color: #FFFFFF !important;
+    border-radius: 50%;
+}
+.swiper-button-next::after{
+    font-size: 14px !important;
+}
+.swiper-button-prev::after{
+    font-size: 14px !important;
+}
+
+/*///////////////////// FOOTER /////////////////////*/
+.footer{
+    background: #00071B;
+    width: 100%;
+    height: 70vh;
+}
