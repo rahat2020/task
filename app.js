@@ -46,7 +46,7 @@ let Dealswiper = new Swiper(".dealSwiper", {
             slidesPerView: 1,
         },
         520: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         950: {
             slidesPerView: 4,
@@ -74,7 +74,7 @@ let treangingOffer = new Swiper(".tdOffer", {
             slidesPerView: 1,
         },
         520: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         950: {
             slidesPerView: 3,

@@ -756,6 +756,19 @@
 
 /*////////////// RESPONSIVE STYLES /////////////////////*/
 @media only screen and (max-width:468px){
+    .nav_item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+        /* width: 50%; */
+    }
     .caro__img{
         width: 100%;
         height: 100%;
@@ -791,9 +804,66 @@
         align-items: center;
     }
     .testimonials{
-        height: 100vh;
+        height: 100%;
+        position: relative;
     }
     .testimonial{
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shby__left .shby__leftImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+    .shby__rgtContainer .shby__rghtImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+    .testimonials .testi__title {
+        position: absolute;
+        margin-top: 3rem;
+       
+    }
+    .prv__btn {
+        position: absolute;
+        margin-left: 2rem;
+        margin-top: 3rem;
+        border: none;
+        padding: 1.42rem;
+        width: 10px;
+        height: 5px;
+        background: #272727cc;
+        color: #FFFFFF !important;
+        border-radius: 50%;
+    }
+    
+    .nxt__btn {
+        position: absolute;
+        margin-right: 2rem;
+        border: none;
+        padding: 1.42rem;
+        background: #272727cc;
+        color: #FFFFFF !important;
+        border-radius: 50%;
+    }
+    .footer {
+        background: #00071B;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .ullist__cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
     }
 }
