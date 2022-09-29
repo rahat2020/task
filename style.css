@@ -198,7 +198,7 @@
 }
 
 .swiper-wrapper {
-    width: 75% !important;
+    /* width: 75% !important; */
     /* height: 100vh; */
     /* border: 1px solid red; */
 }
@@ -221,8 +221,7 @@
     object-fit: cover;
 }
 
-.Dealswiper,
-.treangingOffer {
+.Dealswiper {
     overflow: hidden;
     width: 100vw;
     height: 70vh;
@@ -247,11 +246,23 @@
     /* margin-bottom: 2rem; */
     /* border: 1px solid aqua; */
 }
-
+.tdoffer__container{
+    position: relative;
+}
+.treangingOffer{
+    overflow: hidden;
+    width: 100vw;
+    height: 60vh;
+    /* border: 1px solid red; */
+}
+.offer__slider{
+    width: 500px !important;
+    height: 300px !important;
+}
 .td__offer .tdoffer__title {
     color: #272727;
     font-weight: 600;
-    padding: 3rem;
+    padding: 0 0 0 3rem;
     font-family: 'Libre Baskerville';
 }
 
@@ -261,9 +272,7 @@
 
 }
 
-/* .treangingOffer {
-    border: 1px solid red;
-} */
+
 
 .tdOffer__min {
     font-family: 'Libre Baskerville';
@@ -279,11 +288,27 @@
     object-fit: cover;
 }
 
-/* .swiper-slide{
-    border: 1px solid blue !important;
-} */
+.tdOffer_next{
+    position: absolute;
+    margin-right: 2rem;
+    border: none;
+    padding: 1.42rem;
+    background: #272727cc;
+    color: #FFFFFF !important;
+    border-radius: 50%;   
+}
 
-
+.tdOffer_prev{
+    position: absolute;
+    margin-left: 2rem;
+    border: none;
+    padding: 1.42rem;
+    width: 10px;
+    height: 5px;
+    background: #272727cc;
+    color: #FFFFFF !important;
+    border-radius: 50%;
+}
 /*///////////// FEATURES FOR FESTIBEL  /////////////////*/
 .fr__festibel {
     background-image: url(./assets/forever.png);
@@ -491,7 +516,7 @@
 }
 
 .card-wrapper {
-    border: 1px solid #d81d10;
+    /* border: 1px solid #d81d10; */
     height: 300px !important;
 }
 
@@ -499,7 +524,8 @@
     width: 700px !important;
     height: 300px !important;
 }
-.prv__btn{
+
+.prv__btn {
     position: absolute;
     margin-left: 2rem;
     border: none;
@@ -508,8 +534,9 @@
     height: 5px;
     background: #272727cc;
     color: #FFFFFF !important;
-    border-radius: 50%;  
+    border-radius: 50%;
 }
+
 .nxt__btn {
     position: absolute;
     margin-right: 2rem;
@@ -519,16 +546,254 @@
     color: #FFFFFF !important;
     border-radius: 50%;
 }
-.swiper-button-next::after{
+
+.swiper-button-next::after {
     font-size: 14px !important;
 }
-.swiper-button-prev::after{
+
+.swiper-button-prev::after {
     font-size: 14px !important;
 }
 
 /*///////////////////// FOOTER /////////////////////*/
-.footer{
+.footer {
     background: #00071B;
     width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.footer__head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 2rem 0 0 2rem;
+    flex-direction: row;
+}
+
+.footer__container {
     height: 70vh;
+    border-bottom: 1px solid #fff;
+
+}
+
+.footer__head .footer__whiteLogo {
+    width: 55px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__head .footer__headTitle {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 55px;
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.ullist__cont {
+    /* border: 1px solid blue; */
+    /* margin-top: 2rem; */
+    padding: 4rem 4rem 4rem 4rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+
+}
+
+.ulcontainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+
+}
+
+.footer__left {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid aqua; */
+}
+
+
+
+.fl {
+    width: 160px;
+    height: 100%
+    /* border: 1px solid #15ff00; */
+}
+
+
+.ulcontainer .ul {
+    /* border: 1px solid red; */
+    list-style: none;
+    color: #ffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.ulcontainer .li__title {
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    font-size: 24px;
+    list-style: none;
+    color: #FFFFFF;
+}
+.fotter__right {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 5px;
+    /* border: 1px solid aqua; */
+}
+
+.fr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    /* width: 100%;
+    padding: 5px; */
+}
+
+.fr__title {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.list__items {
+    margin-top: 10px;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.fr__text {
+    color: #FFFFFF;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.fr__msg {
+    position: relative;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputFeild {
+    width: 100%;
+    background: #00071B !important;
+    padding: 10px;
+    position: relative;
+    border: .7px solid #FFFFFF;
+}
+
+.fr__msgIcon {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ebebeb !important;
+}
+
+::placeholder {
+    position: absolute;
+    margin-left: 50px !important;
+    color: #ABABAB !important;
+    font-size: 15px;
+}
+.footer__bottom{
+    width: 100%;
+    margin-top: 3rem;
+    /* border: 1px solid aqua; */
+}
+.footer__bottom .fb__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__btmTitle {
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.social__media .social__icon{
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 3px 0 0 10px;
+}
+
+
+/*////////////// RESPONSIVE STYLES /////////////////////*/
+@media only screen and (max-width:468px){
+    .caro__img{
+        width: 100%;
+        height: 100%;
+    }
+    .caro__rght{
+        display: none;
+    }
+    .treangingOffer{
+        height: 100vh;
+    }
+    .fr__container .fr__img {
+        width: 130px;
+        height: 30px;
+        margin-top: 1rem;
+    }
+    .fr__container .fr__title {
+        font-family: 'Libre Baskerville';
+        font-style: normal;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-top: 1rem;
+    }
+    .fr__festibel {
+        background-image: url(./assets/forever.png);
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* margin-bottom: 3rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials{
+        height: 100vh;
+    }
+    .testimonial{
+        height: 100vh;
+    }
 }

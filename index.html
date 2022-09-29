@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
     <!-- swiper css -->
@@ -303,9 +307,9 @@
     <div class="td__offer">
         <h3 class="tdoffer__title">Trending Offer</h3>
         <div class="tdoffer__container mt-4 treangingOffer tdOffer">
-            <div class="swiper-wrapper">
+            <div class="card-wrapper swiper-wrapper">
 
-                <div class="card mb-3 swiper-slide border-0"
+                <div class="card mb-3 offer__slider swiper-slide border-0"
                     style=" height:16rem; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">
                     <div class="row g-0">
                         <div class="col-md-6">
@@ -320,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3 swiper-slide border-0"
+                <div class="card mb-3 offer__slider swiper-slide border-0"
                     style=" height:16rem; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">
                     <div class="row g-0">
                         <div class="col-md-6">
@@ -335,7 +339,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3 swiper-slide border-0"
+                <div class="card mb-3 offer__slider swiper-slide border-0"
                     style=" height:16rem; box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);">
                     <div class="row g-0">
                         <div class="col-md-6">
@@ -352,6 +356,8 @@
                 </div>
 
             </div>
+            <button class="tdOffer_next swiper-button-next"></button>
+            <button class="tdOffer_prev swiper-button-prev"></button>
         </div>
     </div>
 
@@ -450,68 +456,67 @@
         <div class="testi__container testimonial testi">
             <div class="card-wrapper swiper-wrapper">
 
+                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
+                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
+                    <div class="cardimg__container">
+                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <span class="mb-2 d-flex justify-content-center align-items-center">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/blankStar.png" alt="star" class="review__star">
+                            <span class="review__num">4.4</span>
+                        </span>
+                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
+                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
+                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
+                    </div>
+                </div>
+                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
+                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
+                    <div class="cardimg__container">
+                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <span class="mb-2 d-flex justify-content-center align-items-center">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/blankStar.png" alt="star" class="review__star">
+                            <span class="review__num">4.4</span>
+                        </span>
+                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
+                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
+                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
+                    </div>
+                </div>
+                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
+                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
+                    <div class="cardimg__container">
+                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <span class="mb-2 d-flex justify-content-center align-items-center">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/fillStar.png" alt="star" class="review__star">
+                            <img src="./assets/blankStar.png" alt="star" class="review__star">
+                            <span class="review__num">4.4</span>
+                        </span>
+                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
+                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
+                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
+                    </div>
+                </div>
 
-                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
-                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
-                    <div class="cardimg__container">
-                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
-                    </div>
-                    <div class="card-body">
-                        <span class="mb-2 d-flex justify-content-center align-items-center">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/blankStar.png" alt="star" class="review__star">
-                            <span class="review__num">4.4</span>
-                        </span>
-                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
-                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
-                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
-                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
-                    </div>
-                </div>
-                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
-                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
-                    <div class="cardimg__container">
-                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
-                    </div>
-                    <div class="card-body">
-                        <span class="mb-2 d-flex justify-content-center align-items-center">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/blankStar.png" alt="star" class="review__star">
-                            <span class="review__num">4.4</span>
-                        </span>
-                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
-                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
-                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
-                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
-                    </div>
-                </div>
-                <div class="card slider swiper-slide d-flex flex-column justify-content-center align-items-center"
-                    style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);border-radius: 10px;">
-                    <div class="cardimg__container">
-                        <img src="./assets/reviwer.png" class="testtcard__img" alt="img">
-                    </div>
-                    <div class="card-body">
-                        <span class="mb-2 d-flex justify-content-center align-items-center">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/fillStar.png" alt="star" class="review__star">
-                            <img src="./assets/blankStar.png" alt="star" class="review__star">
-                            <span class="review__num">4.4</span>
-                        </span>
-                        <p class="card-text review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
-                            vel morbi cursus sed sodales molestie proin dictum gravida. Porttitor maecenas tincidunt
-                            ipsum semper malesuada. In sapien feugiat laoreet convallis eu sed. Sapien et montes, duis
-                            tempor euismod augue cras eu eget. Risus suspendisse mauris ullamcorper </p>
-                    </div>
-                </div>
-               
             </div>
             <button class="nxt__btn swiper-button-next"></button>
             <button class="prv__btn swiper-button-prev"></button>
@@ -521,7 +526,100 @@
 
     <!---------------------- FOOTER -------------------->
     <div class="footer">
-        
+        <div class="footer__container">
+            <div class="footer__head">
+                <img src="./assets/white.png" alt="logo" class="footer__whiteLogo">
+                <span class="footer__headTitle">Globex</span>
+            </div>
+            <div class="ullist__cont">
+                <div class="footer__left">
+                    <div class="fl">
+                        <div class="ulcontainer">
+                            <ul class="ul">
+                                <li class="li__title">Woman</li>
+                                <li class="list__items">All Woman</li>
+                                <li class="list__items">Skirts</li>
+                                <li class="list__items">T-Shirts</li>
+                                <li class="list__items">Tops</li>
+                                <li class="list__items">Jackets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fl">
+                        <div class="ulcontainer">
+                            <ul class="ul">
+                                <li class="li__title">Men</li>
+                                <li class="list__items">All Men</li>
+                                <li class="list__items">Shirts</li>
+                                <li class="list__items">T-Shirts</li>
+                                <li class="list__items">Shorts</li>
+                                <li class="list__items">Jackets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fl">
+                        <div class="ulcontainer">
+                            <ul class="ul">
+                                <li class="li__title">Kids</li>
+                                <li class="list__items">All Kids</li>
+                                <li class="list__items">Shirts</li>
+                                <li class="list__items">T-Shirts</li>
+                                <li class="list__items">Tops</li>
+                                <li class="list__items">Jackets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fl">
+                        <div class="ulcontainer">
+                            <ul class="ul">
+                                <li class="li__title">Shopping</li>
+                                <li class="list__items">Your cart</li>
+                                <li class="list__items">Your orders</li>
+                                <li class="list__items">Compared items</li>
+                                <li class="list__items">Wishlist</li>
+                                <li class="list__items">Shopping Details</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fl">
+                        <div class="ulcontainer">
+                            <ul class="ul">
+                                <li class="li__title">More links</li>
+                                <li class="list__items">All Woman</li>
+                                <li class="list__items">Skirts</li>
+                                <li class="list__items">T-Shirts</li>
+                                <li class="list__items">Tops</li>
+                                <li class="list__items">Jackets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fotter__right">
+                    <div class="fr">
+                        <h3 class="fr__title">Stay In Touch</h3>
+                        <p class="fr__text">Stay in touch to get special offers, free giveaways
+                            and once in a lifetime deals</p>
+                        <div class="fr__msg w-100">
+                            <input type="text" placeholder="Enter your email" class="inputFeild">
+                            <i class="fa-regular fa-envelope fr__msgIcon"></i>
+                            <!-- <img src="./assets/msgICon.png" alt="msg" class="fr__msgIcon"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer__bottom">
+                <div class="fb__container">
+                    <p class="footer__btmTitle">Terns and Conditions</p>
+                    <p class="footer__btmTitle">Privacy Policy</p>
+                    <div class="social__media">
+                        <i class="fa-brands fa-square-facebook social__icon"></i>
+                        <i class="fa-brands fa-instagram social__icon"></i>
+                        <i class="fa-brands fa-whatsapp social__icon"></i>
+                        <i class="fa-brands fa-twitter social__icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <!-- Swiper JS -->
@@ -534,3 +632,14 @@
 <script src="./app.js"></script>
 
 </html>
+
+<!-- <div class="ulcontainer">
+    <ul class="ul">
+        <li class="li__title">Woman</li>
+        <li class="list__items">All Woman</li>
+        <li class="list__items">Skirts</li>
+        <li class="list__items">T-Shirts</li>
+        <li class="list__items">Tops</li>
+        <li class="list__items">Jackets</li>
+    </ul>
+</div> -->

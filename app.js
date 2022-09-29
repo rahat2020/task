@@ -17,8 +17,8 @@ let swiper = new Swiper(".mySwiper", {
         0: {
             slidesPerView: 1,
         },
-        520: {
-            slidesPerView: 2,
+        460: {
+            slidesPerView:1,
         },
         950: {
             slidesPerView: 4,
@@ -55,9 +55,9 @@ let Dealswiper = new Swiper(".dealSwiper", {
   });
 
 let treangingOffer = new Swiper(".tdOffer", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 30,
-    slidesPerGroup:1,
+    slidesPerGroup:3,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -102,7 +102,7 @@ let testimonial = new Swiper(".testi", {
             slidesPerView: 1,
         },
         520: {
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
         950: {
             slidesPerView: 3,
